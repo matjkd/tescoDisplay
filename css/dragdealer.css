@@ -13,7 +13,7 @@ body {
 .dragdealer {
 	position: relative;
 	height: 30px;
-	background: #000;
+	background: #fff;
 	padding:0px;
 }
 .dragdealer .handle {

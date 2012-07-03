@@ -100,6 +100,8 @@
 
 	<div id="finishedShopping"
 		style="background: #999; width: 200px; height: 200px; position: absolute; top: 300px; left: 450px; opacity: 0.1;">
+Finished shopping?
+
 
 	</div>
 

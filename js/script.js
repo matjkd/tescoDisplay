@@ -36,11 +36,15 @@ var slideshow = new Dragdealer('slideshow',
 		  		setTimeout('finalPage()',2000);
 		  		setTimeout('hideHand()',5000);
 		  		
-		  		$.post("logger.php", { name: "John", time: "2pm" } );
+		  		logAction('Page 5 Visited');
 		  		}
 		  	}
 		  });
+function logAction(action) {
+	
 
+		$.post("logger.php", { action: action } );
+}
 
 function finalPage() 
 {

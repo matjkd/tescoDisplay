@@ -1,0 +1,58 @@
+/**
+ * Dragdealer JS v0.9.5
+ * http://code.ovidiu.ch/dragdealer-js
+ *
+ * Copyright (c) 2010, Ovidiu Chereches
+ * MIT License
+ * http://legal.ovidiu.ch/licenses/MIT
+ */
+
+.dragdealer {
+	position: relative;
+	height: 30px;
+	background: #EEE;
+}
+.dragdealer .handle {
+	position: absolute;
+	cursor: pointer;
+}
+.dragdealer .red-bar {
+	width: 100px;
+	height: 30px;
+	background: #CC0000;
+	color: #FFF;
+	line-height: 30px;
+	text-align: center;
+}
+.dragdealer .disabled {
+	background: #898989;
+}
+#slideshow {
+	width: 1080px;
+	height: 1920px;
+	overflow: hidden;
+}
+	#slideshow .handle {
+		width:5400px;
+		height: 1920px;
+	}
+		#slideshow .handle .slide {
+			float: left;
+			width: 1080px;
+			height: 1920px;
+		}
+		#slideshow .handle .img1 {
+			background: url('images/scanner_5.jpg') no-repeat 0 0 #ddd;
+		}
+		#slideshow .handle .img2 {
+			background: url('images/scanner_52.jpg') no-repeat 0 0 #000;
+		}
+		#slideshow .handle .img3 {
+			background: url('images/scanner_53.jpg') no-repeat 0 0 #ddd;
+		}
+		#slideshow .handle .img4 {
+			background: url('images/scanner_54.jpg') no-repeat 0 0 #000;
+		}
+		#slideshow .handle .img5 {
+			background: url('images/scanner_54.jpg') no-repeat 0 0 #000;
+		}

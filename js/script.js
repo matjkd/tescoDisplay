@@ -36,7 +36,7 @@ var slideshow = new Dragdealer('slideshow',
 		  		setTimeout('finalPage()',2000);
 		  		setTimeout('hideHand()',5000);
 		  		
-		  		
+		  		$.post("logger.php", { name: "John", time: "2pm" } );
 		  		}
 		  	}
 		  });

@@ -39,7 +39,7 @@
 
 	<div class="top-spaced">
 		<div id="slideshow" class="dragdealer">
-			<div class="handle" style="left: 20px;">
+			<div class="handle" style="left: 0px;">
 				<div class="slide img1"></div>
 				<div class="slide img2"></div>
 				<div class="slide img3"></div>
@@ -64,36 +64,43 @@
 					<span class="description">Page 3</span>
 			</a>
 			</li>
-			<li><a id="slideshow-photo-4" href="#photo4"> <span class="title">
-						</span> <span class="description">Page 4</span>
+			<li><a id="slideshow-photo-4" href="#photo4"> <span class="title"> </span>
+					<span class="description">Page 4</span>
 			</a>
 			</li>
-			<li><a id="slideshow-photo-5" href="#photo5"> <span class="title">
-						</span> <span class="description">Page 5</span>
+			<li><a id="slideshow-photo-5" href="#photo5"> <span class="title"> </span>
+					<span class="description">Page 5</span>
 			</a>
 			</li>
+
+
 			
-			
-			<li><a id="slideshow-next" href="#photo5"> <span class="title">
-						</span> <span class="description">next.</span>
-			</a>
-			</li>
-			
-			
-			<li><a id="slideshow-previous" href="#photo5"> <span class="title">
-						</span> <span class="description">previous.</span>
-			</a>
-			</li>
 		</ul>
 	</div>
-	
-	
-	<div id="handPhone" style="background:#999; width:200px; height:200px; position:absolute; bottom:-200px; right:0;">
-	
+
+	<div id="previousButton"
+		style="background: #999; width: 100px; height: 100px; position: absolute; top: 540px; left: 0px;">
+		<a id="slideshow-previous" href="#photo5"> <span class="title"> </span> <span
+			class="description">previous.</span>
+		</a>
 	</div>
 	
-		<div id="finishedShopping" style="background:#999; width:200px; height:200px; position:absolute; top:300px; left:450px; opacity:0.1;">
-	
+	<div id="nextButton"
+		style="background: #999; width: 100px; height: 100px; position: absolute; top: 540px; left: 980px;">
+		<a id="slideshow-next" href="#photo5"> <span class="title"> </span> <span
+			class="description">next.</span>
+		</a>
+	</div>
+
+
+	<div id="handPhone"
+		style="background: #999; width: 200px; height: 200px; position: absolute; bottom: -200px; left: 880px;">
+
+	</div>
+
+	<div id="finishedShopping"
+		style="background: #999; width: 200px; height: 200px; position: absolute; top: 300px; left: 450px; opacity: 0.1;">
+
 	</div>
 
 	<!-- JavaScript at the bottom for fast page loading -->

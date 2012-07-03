@@ -52,36 +52,36 @@
 	<div id="slideshow-menu-wrapper" class="top-spaced right-float">
 		<div id="slideshow-menu-cursor" class="cursor" style="top: 66px;"></div>
 		<ul id="slideshow-menu">
-			<li><a id="slideshow-photo-1" href="#photo1"> <span class="title">Lorem</span>
-					<span class="description">Lorem ipsum dolor sit.</span>
+			<li><a id="slideshow-photo-1" href="#photo1"> <span class="title"></span>
+					<span class="description">Page 1</span>
 			</a>
 			</li>
-			<li><a id="slideshow-photo-2" href="#photo2"> <span class="title">Ipsum</span>
-					<span class="description">Lorem ipsum dolor sit.</span>
+			<li><a id="slideshow-photo-2" href="#photo2"> <span class="title"></span>
+					<span class="description">Page 2</span>
 			</a>
 			</li>
-			<li><a id="slideshow-photo-3" href="#photo3"> <span class="title">Dolor</span>
-					<span class="description">Lorem ipsum dolor sit.</span>
+			<li><a id="slideshow-photo-3" href="#photo3"> <span class="title"></span>
+					<span class="description">Page 3</span>
 			</a>
 			</li>
-			<li><a id="slideshow-photo-4" href="#photo4"> <span class="title">Sit
-						amet</span> <span class="description">Lorem ipsum dolor sit.</span>
+			<li><a id="slideshow-photo-4" href="#photo4"> <span class="title">
+						</span> <span class="description">Page 4</span>
 			</a>
 			</li>
-			<li><a id="slideshow-photo-5" href="#photo5"> <span class="title">Sit
-						amet</span> <span class="description">Lorem ipsum dolor sit.</span>
-			</a>
-			</li>
-			
-			
-			<li><a id="slideshow-next" href="#photo5"> <span class="title">Sit
-						amet</span> <span class="description">next.</span>
+			<li><a id="slideshow-photo-5" href="#photo5"> <span class="title">
+						</span> <span class="description">Page 5</span>
 			</a>
 			</li>
 			
 			
-			<li><a id="slideshow-previous" href="#photo5"> <span class="title">Sit
-						amet</span> <span class="description">previous.</span>
+			<li><a id="slideshow-next" href="#photo5"> <span class="title">
+						</span> <span class="description">next.</span>
+			</a>
+			</li>
+			
+			
+			<li><a id="slideshow-previous" href="#photo5"> <span class="title">
+						</span> <span class="description">previous.</span>
 			</a>
 			</li>
 		</ul>

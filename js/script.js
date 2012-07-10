@@ -11,6 +11,8 @@ var slideshow = new Dragdealer('slideshow',
 		  {
 		  	steps: totalSlides,
 		  	loose: true,
+		  	speed: 20,
+		loose:true,
 		  	callback: function() {
 		  		
 		  		
@@ -84,25 +86,15 @@ function hideHand() {
 }
 
 function showAlert() {
-	 $('#finishedShopping').animate({
-		    opacity: 1
-		  
-		  
-		  }, 500, function() {
-		    // Animation complete.
-			  
-		  });
+	 $('#finishedShopping').fadeIn('slow', function() {
+	        // Animation complete
+     });
 }
 
 function hideAlert() {
-	$('#finishedShopping').animate({
-	    opacity: 0
-	 
-	  
-	  }, 1000, function() {
-	    // Animation complete.
-		  
-	  });
+	 $('#finishedShopping').fadeOut('slow', function() {
+	        // Animation complete
+  });
 }
 
 

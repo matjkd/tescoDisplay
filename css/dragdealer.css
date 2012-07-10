@@ -7,19 +7,65 @@
  * http://legal.ovidiu.ch/licenses/MIT
  */
 body {
-	padding:0px;
-	margin:0px;
+	padding: 0px;
+	margin: 0px;
+	cursor: none;
 }
+
+#finishedShopping {
+	border: solid 0px #000000;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	-moz-box-shadow: 4px 4px 39px #000000;
+-webkit-box-shadow: 4px 4px 39px #000000;
+box-shadow: 4px 4px 39px #000000;
+	background: #fff;
+	width: 508px;
+	height: 265px;
+	position: absolute;
+	top: 450px;
+	left: 285px;
+	text-align:center;
+	display:none;
+	
+	
+}
+.yesno {
+	float:left;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	width: 200px;
+	height: 60px;
+	background:#dedede;
+	-moz-box-shadow:inset 0px 0px 54px #aaa;
+-webkit-box-shadow:inset 0px 0px 54px #aaa;
+box-shadow:inset 0px 0px 54px #aaa;
+margin:12px;
+color:#fff;
+	
+}
+.yesnocontainer {
+	
+	height:100px;
+	clear:both;
+	margin:0 auto;
+	width:450px;
+}
+
 .dragdealer {
 	position: relative;
 	height: 30px;
 	background: #fff;
-	padding:0px;
+	padding: 0px;
 }
+
 .dragdealer .handle {
 	position: absolute;
 	cursor: pointer;
 }
+
 .dragdealer .red-bar {
 	width: 0px;
 	height: 30px;
@@ -28,35 +74,46 @@ body {
 	line-height: 30px;
 	text-align: center;
 }
+
 .dragdealer .disabled {
 	background: #898989;
 }
+
 #slideshow {
 	width: 1080px;
 	height: 1920px;
 	overflow: hidden;
+	cursor: none;
 }
-	#slideshow .handle {
-		width:5400px;
-		height: 1920px;
-	}
-		#slideshow .handle .slide {
-			float: left;
-			width: 1080px;
-			height: 1920px;
-		}
-		#slideshow .handle .img1 {
-			background: url('images/scanner_5.jpg') no-repeat 0 0 #ddd;
-		}
-		#slideshow .handle .img2 {
-			background: url('images/scanner_52.jpg') no-repeat 0 0 #000;
-		}
-		#slideshow .handle .img3 {
-			background: url('images/scanner_53.jpg') no-repeat 0 0 #ddd;
-		}
-		#slideshow .handle .img4 {
-			background: url('images/scanner_54.jpg') no-repeat 0 0 #000;
-		}
-		#slideshow .handle .img5 {
-			background: url('images/scanner_54.jpg') no-repeat 0 0 #000;
-		}
+
+#slideshow .handle {
+	width: 5400px;
+	height: 1920px;
+	cursor: none;
+}
+
+#slideshow .handle .slide {
+	float: left;
+	width: 1080px;
+	height: 1920px;
+}
+
+#slideshow .handle .img1 {
+	background: url('images/scanner_5.jpg') no-repeat 0 0 #ddd;
+}
+
+#slideshow .handle .img2 {
+	background: url('images/scanner_52.jpg') no-repeat 0 0 #000;
+}
+
+#slideshow .handle .img3 {
+	background: url('images/scanner_53.jpg') no-repeat 0 0 #ddd;
+}
+
+#slideshow .handle .img4 {
+	background: url('images/scanner_54.jpg') no-repeat 0 0 #000;
+}
+
+#slideshow .handle .img5 {
+	background: url('images/scanner_54.jpg') no-repeat 0 0 #000;
+}

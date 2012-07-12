@@ -35,7 +35,7 @@
 		</div>
 	</div>
 
-	<div style="display: block;" id="slideshow-menu-wrapper"
+<!-- <div style="display: block;" id="slideshow-menu-wrapper"
 		class="top-spaced right-float">
 		<div id="slideshow-menu-cursor" class="cursor" style="top: 66px;"></div>
 		<ul id="slideshow-menu">
@@ -63,7 +63,7 @@
 
 
 		</ul>
-	</div>
+	</div> -->	
 
 	<div id="previousButton"
 		style="">

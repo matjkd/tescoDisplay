@@ -33,7 +33,7 @@ body {
 #previousButton {
 	background: url('assets/left-arrow.png') no-repeat 0 0 ;
 	
-	width: 100px;
+	width: 75px;
 	height: 100px;
 	position: absolute;
 	top: 540px;
@@ -42,11 +42,11 @@ body {
 
 #nextButton {
 	background: url('assets/right-arrow.png') no-repeat 0 0 ;
-	width: 100px;
+	width: 75px;
 	height: 100px;
 	position: absolute;
 	top: 540px;
-	left: 970px;
+	left: 995px;
 }
 
 .yesno {

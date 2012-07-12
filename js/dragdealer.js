@@ -476,10 +476,10 @@ Dragdealer.prototype = {
 		}
 		//$('#nextButton').append(cursorx + ' ');
 
-		if (cursorx > 973 && cursorx < 1073) {
+		if (cursorx > 996 && cursorx < 1068) {
 			
 			
-		} else  if(cursorx > 10 && cursorx < 109)  {
+		} else  if(cursorx > 10 && cursorx < 83)  {
 			
 		} else {
 			if (differenceoffset < -150) {

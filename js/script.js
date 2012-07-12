@@ -10,8 +10,9 @@ var totalSlides = 5
 var slideshow = new Dragdealer('slideshow',
 		  {
 		  	steps: totalSlides,
-		  	loose: true,
+		  	loose: false,
 		  	speed: 20,
+		  	
 		loose:true,
 		  	callback: function() {
 		  		
@@ -102,6 +103,11 @@ function hideAlert() {
 
 $(document).ready(function(){
 	
+	
+	  //  $(document).bind("contextmenu",function(e){
+	 //       return false;
+	 //   });
+
 	
 		 showHand();
 		 setTimeout('hideHand()',5000);

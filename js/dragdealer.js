@@ -239,7 +239,7 @@ Dragdealer.prototype =
 		{
 			return !self.activity;
 		}
-		
+	
 		this.interval = setInterval(function(){ self.animate() }, 25);
 		self.animate(false, true);
 	},
@@ -312,7 +312,11 @@ Dragdealer.prototype =
 				Cursor.x - this.offset.wrapper[0] - (this.handle.offsetWidth / 2),
 				Cursor.y - this.offset.wrapper[1] - (this.handle.offsetHeight / 2)
 			];
+			
+			
 		}
+		
+		
 		this.setTargetOffset(target);
 	},
 	stopTap: function()
@@ -351,9 +355,10 @@ Dragdealer.prototype =
 		if(this.slide)
 		{
 			var ratioChange = this.change;
-			target[0] += ratioChange[0] * 4;
-			target[1] += ratioChange[1] * 4;
+			target[0] += ratioChange[0] * 16;
+			target[1] += ratioChange[1] * 16;
 		}
+		
 		this.setTargetValue(target);
 		this.result();
 	},
@@ -372,6 +377,7 @@ Dragdealer.prototype =
 			}
 			this.groupCopy(this.value.prev, value);
 		}
+		
 	},
 	result: function()
 	{
@@ -394,6 +400,7 @@ Dragdealer.prototype =
 				Cursor.x - this.offset.wrapper[0] - this.offset.mouse[0],
 				Cursor.y - this.offset.wrapper[1] - this.offset.mouse[1]
 			];
+			
 			this.setTargetOffset(offset, this.loose);
 			
 			this.change = [
@@ -425,6 +432,7 @@ Dragdealer.prototype =
 		{
 			this.value.current[0] += diff[0] * this.speed;
 			this.value.current[1] += diff[1] * this.speed;
+			
 		}
 		else
 		{
@@ -438,6 +446,7 @@ Dragdealer.prototype =
 		{
 			this.offset.current = this.getOffsetsByRatios(this.value.current);
 		}
+		
 		else
 		{
 			this.offset.current = this.getOffsetsByRatios(
@@ -459,6 +468,8 @@ Dragdealer.prototype =
 				this.handle.style.top = String(this.offset.current[1]) + 'px';
 			}
 			this.groupCopy(this.offset.prev, this.offset.current);
+			
+			
 		}
 	},
 	setTargetValue: function(value, loose)
@@ -467,6 +478,8 @@ Dragdealer.prototype =
 		
 		this.groupCopy(this.value.target, target);
 		this.offset.target = this.getOffsetsByRatios(target);
+		
+		
 	},
 	setTargetOffset: function(offset, loose)
 	{
@@ -533,17 +546,64 @@ Dragdealer.prototype =
 	},
 	getClosestStep: function(value)
 	{
+		/* Hack for large screen 
+		 * On 60 inch screen too much movement was required to get to next slide
+		 * This alters the required movement,
+		 * and also stops the slide going forward or back more than 1 at a time
+		 * 
+		 *  */
+		var valuenow = Cursor.x - this.offset.wrapper[0] - this.offset.mouse[0];
+		var wrapperoff = this.offset.wrapper[0];
+		var mouseoffset = this.offset.mouse[0];
+		var cursorx = Cursor.x;
+		var difference = (mouseoffset-cursorx);
+		var currentpage =Math.round(valuenow*(totalSlides-1));
+		var totalwidth = this.steps * 1080;
+		var cursorpage = Math.ceil(mouseoffset/1080);
+		var differenceoffset = ((cursorpage-1)*1080)-difference;
+		
 		var k = 0;
-		var min = 1;
+		var min =1;
 		for(var i = 0; i <= this.steps - 1; i++)
 		{
-			if(Math.abs(this.stepRatios[i] - value) < min)
+			var test23 = Math.abs(this.stepRatios[i] - (value+0.3));
+			
+			if((Math.abs(this.stepRatios[i] - (value))) < (min))
 			{
 				min = Math.abs(this.stepRatios[i] - value);
+				
+			
 				k = i;
 			}
+			
 		}
-		return this.stepRatios[k];
+		
+		
+		
+		if(differenceoffset < -150) {
+			var newpage = cursorpage;
+		}
+		
+		
+		if(differenceoffset > 150) {
+			var newpage = cursorpage-2;
+		}
+		
+		if(differenceoffset <= 150 && differenceoffset >= -150) {
+			var newpage = cursorpage-1;
+		}
+		
+		if(newpage < 1) {
+			var newpage = 0;
+		}
+		
+		if(newpage >= this.steps) {
+			var newpage = 4;
+		}
+		
+	
+		$('body').append(differenceoffset + ' page:' + cursorpage +' newpage:' + newpage + k +'<br/>');
+		return this.stepRatios[newpage];
 	},
 	groupCompare: function(a, b)
 	{

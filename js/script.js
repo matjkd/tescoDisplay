@@ -112,33 +112,7 @@ $(document).ready(function(){
 		 showHand();
 		 setTimeout('hideHand()',5000);
 
-		 document.getElementById('slideshow-photo-1').onclick = function()
-		    {
-		        slideshow.setStep(1);
-		        return false;
-		    }
-		    document.getElementById('slideshow-photo-2').onclick = function()
-		    {
-		        slideshow.setStep(2);
-		        return false;
-		    }
-		    document.getElementById('slideshow-photo-3').onclick = function()
-		    {
-		    
-		        slideshow.setStep(3);
-		        
-		        return false;
-		    }
-		    document.getElementById('slideshow-photo-4').onclick = function()
-		    {
-		        slideshow.setStep(4);
-		        return false;
-		    }
-		    document.getElementById('slideshow-photo-5').onclick = function()
-		    {
-		        slideshow.setStep(5);
-		        return false;
-		    }
+		
 		    
 		    document.getElementById('nextButton').onclick = function()
 		    {

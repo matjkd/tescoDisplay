@@ -474,7 +474,7 @@ Dragdealer.prototype = {
 
 			}
 		}
-		$('#nextButton').append(cursorx + ' ');
+		//$('#nextButton').append(cursorx + ' ');
 
 		if (cursorx > 973 && cursorx < 1073) {
 			

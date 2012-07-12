@@ -3,9 +3,9 @@ var link2 = $('#slideshow-photo-2');
 var link3 = $('#slideshow-photo-3');
 var link4 = $('#slideshow-photo-4');
 var doalert = 0;
-var totalSlides = 5
-
-
+var totalSlides = 5;
+var valuenow = 0;
+var currentpage = 0;
 	
 var slideshow = new Dragdealer('slideshow',
 		  {
@@ -140,18 +140,22 @@ $(document).ready(function(){
 		        return false;
 		    }
 		    
-		    document.getElementById('slideshow-next').onclick = function()
+		    document.getElementById('nextButton').onclick = function()
 		    {
-		    	var valuenow = parseFloat(slideshow.getClosestSteps(slideshow.value.current));
-		    	var currentpage =(valuenow*(totalSlides-1)+1);
+		    	
+		    	 valuenow = parseFloat(slideshow.getClosestSteps(slideshow.value.current));
+		    	 currentpage =(valuenow*(totalSlides-1)+1);
+		    	//$('#nextButton').append(currentpage+1 + ' ');
 		        slideshow.setStep(currentpage+1);
 		        return false;
 		    }
 		    
-		    document.getElementById('slideshow-previous').onclick = function()
+		    document.getElementById('previousButton').onclick = function()
 		    {
-		    	var valuenow = parseFloat(slideshow.getClosestSteps(slideshow.value.current));
-		    	var currentpage =(valuenow*(totalSlides-1)+1);
+		    	
+		    	 valuenow = parseFloat(slideshow.getClosestSteps(slideshow.value.current));
+		    	 currentpage =(valuenow*(totalSlides-1)+1);
+		    	//$('#previousButton').append(currentpage-1 + ' ');
 		        slideshow.setStep(currentpage-1);
 		        return false;
 		    }

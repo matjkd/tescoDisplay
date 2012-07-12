@@ -9,7 +9,7 @@
 body {
 	padding: 0px;
 	margin: 0px;
-	cursor: none;
+	/** cursor: none; */
 }
 
 #finishedShopping {
@@ -18,40 +18,57 @@ body {
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
 	-moz-box-shadow: 4px 4px 39px #000000;
--webkit-box-shadow: 4px 4px 39px #000000;
-box-shadow: 4px 4px 39px #000000;
+	-webkit-box-shadow: 4px 4px 39px #000000;
+	box-shadow: 4px 4px 39px #000000;
 	background: #fff;
 	width: 508px;
 	height: 265px;
 	position: absolute;
 	top: 450px;
 	left: 285px;
-	text-align:center;
-	display:none;
-	
-	
+	text-align: center;
+	display: none;
 }
+
+#previousButton {
+	background: url('assets/left-arrow.png') no-repeat 0 0 ;
+	
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 540px;
+	left: 10px;
+}
+
+#nextButton {
+	background: url('assets/right-arrow.png') no-repeat 0 0 ;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 540px;
+	left: 970px;
+}
+
 .yesno {
-	float:left;
+	float: left;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
 	width: 200px;
 	height: 60px;
-	background:#dedede;
-	-moz-box-shadow:inset 0px 0px 54px #aaa;
--webkit-box-shadow:inset 0px 0px 54px #aaa;
-box-shadow:inset 0px 0px 54px #aaa;
-margin:12px;
-color:#fff;
-	
+	background: #dedede;
+	-moz-box-shadow: inset 0px 0px 54px #aaa;
+	-webkit-box-shadow: inset 0px 0px 54px #aaa;
+	box-shadow: inset 0px 0px 54px #aaa;
+	margin: 12px;
+	color: #fff;
 }
+
 .yesnocontainer {
-	
-	height:100px;
-	clear:both;
-	margin:0 auto;
-	width:450px;
+	height: 100px;
+	clear: both;
+	margin: 0 auto;
+	width: 450px;
 }
 
 .dragdealer {

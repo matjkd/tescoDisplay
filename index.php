@@ -35,7 +35,7 @@
 		</div>
 	</div>
 
-	<div style="display: none;" id="slideshow-menu-wrapper"
+	<div style="display: block;" id="slideshow-menu-wrapper"
 		class="top-spaced right-float">
 		<div id="slideshow-menu-cursor" class="cursor" style="top: 66px;"></div>
 		<ul id="slideshow-menu">
@@ -66,22 +66,18 @@
 	</div>
 
 	<div id="previousButton"
-		style="background: #999; width: 100px; height: 100px; position: absolute; top: 540px; left: 0px;">
-		<a id="slideshow-previous" href="#photo5"> <span class="title"> </span>
-			<span class="description">previous.</span>
-		</a>
+		style="">
+		
 	</div>
 
 	<div id="nextButton"
-		style="background: #999; width: 100px; height: 100px; position: absolute; top: 540px; left: 980px;">
-		<a id="slideshow-next" href="#photo5"> <span class="title"> </span> <span
-			class="description">next.</span>
-		</a>
+		style="">
+		
 	</div>
 
 
 	<div id="handPhone"
-		style="background: #999; width: 200px; height: 200px; position: absolute; bottom: -200px; left: 880px;">
+		style=" width: 200px; height: 200px; position: absolute; bottom: -200px; left: 880px;">
 
 	</div>
 

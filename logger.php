@@ -1,7 +1,7 @@
 <?php 
 
 
-$file = "log/today.txt";
+$file = "log/today.csv";
 $fh = fopen($file, 'a') or die("can't open file");
 $dateNow = date('l jS \of F Y h:i:s A');
 

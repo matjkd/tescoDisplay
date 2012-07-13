@@ -474,12 +474,12 @@ Dragdealer.prototype = {
 
 			}
 		}
-		//$('#nextButton').append(cursorx + ' ');
+	//	$('#nextButton').append(cursorpage + ' ');
 
 		if (cursorx > 996 && cursorx < 1068) {
 			
-			
 		} else  if(cursorx > 10 && cursorx < 83)  {
+
 			
 		} else {
 			if (differenceoffset < -150) {
@@ -498,6 +498,10 @@ Dragdealer.prototype = {
 				k = 4;
 			}
 		}
+		if(cursorpage == 1) {
+			k =1;
+		}
+		
 
 		return this.stepRatios[k];
 	},

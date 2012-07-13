@@ -77,7 +77,13 @@
 
 
 	<div class="selectDisable" id="handPhone">
-	&nbsp;
+	<div class="phoneSlideshow">
+	
+	<img src="css/assets/phonePage1.png"/>
+	<img src="css/assets/phonePage2.png"/>
+	<img src="css/assets/phonePage3.png"/>
+	<img src="css/assets/phonePage4.png"/>
+	</div>
 
 	</div>
 
@@ -97,6 +103,7 @@
 
 	<!-- scripts concatenated and minified via build script -->
 	<script src="js/dragdealer.js"></script>
+	<script src="js/cycle.js"></script>
 	<script src="js/script.js"></script>
 	<script>
   

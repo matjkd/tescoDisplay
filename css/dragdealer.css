@@ -62,6 +62,13 @@ body {
 	
 }
 
+.phoneSlideshow  {
+	
+	position:relative;
+	left:430px;
+	top:50px;
+}
+
 .yesno {
 	float: left;
 	-moz-border-radius: 20px;

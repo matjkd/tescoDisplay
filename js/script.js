@@ -103,7 +103,7 @@ function hideAlert() {
 
 $(document).ready(function(){
 	
-	
+	$('img').bind('dragstart', function(event) { event.preventDefault(); });
 	  //  $(document).bind("contextmenu",function(e){
 	 //       return false;
 	 //   });

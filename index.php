@@ -65,18 +65,18 @@
 		</ul>
 	</div> -->	
 
-	<div id="previousButton"
+	<div class="selectDisable" id="previousButton"
 		style="">
-		
+		&nbsp;
 	</div>
 
-	<div id="nextButton"
+	<div class="selectDisable" id="nextButton"
 		style="">
-		
+		&nbsp;
 	</div>
 
 
-	<div id="handPhone">
+	<div class="selectDisable" id="handPhone">
 	&nbsp;
 
 	</div>

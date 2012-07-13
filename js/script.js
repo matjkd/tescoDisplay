@@ -112,9 +112,9 @@ function showHand() {
 
 function hideHand() {
 	$('#handPhone').animate({
-		opacity : 0,
-		bottom : '-1283',
-		left : '120'
+		opacity : 1,
+		bottom : '-883',
+		left : '220'
 
 	}, 3000, function() {
 		// Animation complete.

@@ -77,12 +77,22 @@
 
 
 	<div class="selectDisable" id="handPhone">
-	<div class="phoneSlideshow">
 	
-	<img src="css/assets/phonePage1.png"/>
-	<img src="css/assets/phonePage2.png"/>
-	<img src="css/assets/phonePage3.png"/>
-	<img src="css/assets/phonePage4.png"/>
+	<img id="bgImage" src="css/assets/handphone.png"/>
+	<div class="phoneSlideshow"style="display:none;">
+	
+	<img class="slideImages" src="css/assets/phonePage1.png"/>
+	<img class="slideImages" src="css/assets/phonePage2.png"/>
+	<img class="slideImages" src="css/assets/phonePage3.png"/>
+	<img class="slideImages" src="css/assets/phonePage4.png"/>
+	</div>
+	
+	<div class="phoneSlideshowSmall" style="display:none;">
+	
+	<img class="slideImagesSmall" src="css/assets/phonePage1.png"/>
+	<img class="slideImagesSmall" src="css/assets/phonePage2.png"/>
+	<img class="slideImagesSmall" src="css/assets/phonePage3.png"/>
+	<img class="slideImagesSmall" src="css/assets/phonePage4.png"/>
 	</div>
 
 	</div>

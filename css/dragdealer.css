@@ -13,6 +13,14 @@ body {
 	overflow: hidden;
 }
 
+#bgImage {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:1000;
+}
+
 #finishedShopping {
 	border: solid 0px #000000;
 	-moz-border-radius: 50px;
@@ -32,7 +40,7 @@ body {
 }
 .selectDisable {-webkit-user-select: none;  -khtml-user-select: none;   -moz-user-select: none; -o-user-select: none;    user-select: none; }
 #handPhone {
-	background: url('assets/handphone.png') no-repeat 0 0;
+	
 	width: 768px;
 	height: 1283px;
 	position: absolute;
@@ -63,12 +71,31 @@ body {
 }
 
 .phoneSlideshow  {
-	
+	z-index:2000;
 	position:relative;
 	left:430px;
 	top:50px;
+	width:238px;
 }
 
+.phoneSlideshowSmall  {
+	z-index:2000;
+	position:relative;
+	left:278px;
+	top:50px;
+	width:238px;
+	
+}
+
+.slideImages {
+	width: 238px;
+	
+}
+.slideImagesSmall {
+	width: 149px;
+	height:256px;
+	
+}
 .yesno {
 	float: left;
 	-moz-border-radius: 20px;

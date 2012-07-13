@@ -50,7 +50,11 @@ var slideshow = new Dragdealer('slideshow', {
 			if (hand == 0) {
 				showHand();
 
-				setTimeout('hideHand()', 5000);
+				 $('.phoneSlideshow').cycle({
+						fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+							
+					});
+				setTimeout('hideHand()', 15000);
 				hand = 1;
 			}
 
@@ -142,9 +146,10 @@ $(document).ready(
 			// return false;
 			// });
 			
-			 $('.phoneSlideshow').cycle({
-					fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-				});
+			document.getElementById('handPhone').onclick = function() {
+				hideHand();
+			}
+		
 
 			document.getElementById('nextButton').onclick = function() {
 

@@ -37,6 +37,7 @@ body {
 	left: 285px;
 	text-align: center;
 	display: none;
+	padding-top:30px;
 }
 .selectDisable {-webkit-user-select: none;  -khtml-user-select: none;   -moz-user-select: none; -o-user-select: none;    user-select: none; }
 #handPhone {
@@ -97,25 +98,33 @@ body {
 	
 }
 .yesno {
-	float: left;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-	width: 200px;
-	height: 60px;
-	background: #dedede;
-	-moz-box-shadow: inset 0px 0px 54px #aaa;
-	-webkit-box-shadow: inset 0px 0px 54px #aaa;
-	box-shadow: inset 0px 0px 54px #aaa;
-	margin: 12px;
-	color: #fff;
+	
+
+	width: 163px;
+	height: 50px;
+	
+	margin: 42px 20px 20px 20px;
+	
+
 }
 
+.yesButton {
+	float: left;
+	background-image: url('assets/Yes.png');
+	margin-left: 32px;
+}
+
+.noButton {
+	float: right;
+	background-image: url('assets/No.png');
+	margin-right: 32px;
+}
 .yesnocontainer {
 	height: 100px;
 	clear: both;
 	margin: 0 auto;
 	width: 450px;
+	
 }
 
 .dragdealer {

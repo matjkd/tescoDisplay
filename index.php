@@ -98,11 +98,12 @@
 	</div>
 
 	<div id="finishedShopping">
-		Finished shopping?
-
+		<img class="slideImages" src="css/assets/finished-shopping.png"/>
+		
+		
 		<div class="yesnocontainer">
-			<div onclick="alert('yes')" class="yesno">Yes</div>
-			<div onclick="hideAlert()" class="yesno">No</div>
+			<div onclick="reset()" class="selectDisable yesButton yesno">&nbsp;</div>
+			<div onclick="hideAlert()" class="selectDisable noButton yesno">&nbsp;</div>
 		</div>
 	</div>
 
@@ -114,6 +115,7 @@
 	<!-- scripts concatenated and minified via build script -->
 	<script src="js/dragdealer.js"></script>
 	<script src="js/cycle.js"></script>
+	<script src="js/idle.js"></script>
 	<script src="js/script.js"></script>
 	<script>
   

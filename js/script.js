@@ -8,6 +8,7 @@ var valuenow = 0;
 var currentpage = 0;
 var hand = 0;
 var phonesmall = 0;
+var timeout = 45000;
 
 var slideshow = new Dragdealer('slideshow', {
 	steps : totalSlides,
@@ -166,11 +167,41 @@ function hideAlert() {
 	});
 }
 
+function reset() {
+	var d = new Date();
+	var hour = d.getHours();
+	
+	
+	if(hour < 6 || hour > 21) {
+		window.location  = 'slideshow.php';
+	}
+	
+	
+	hideHandtotal();
+	location.reload();
+}
+
 // Links
 
 $(document).ready(
 		function() {
+			
+			
 
+	          $(document).bind("idle.idleTimer", function(){
+	        	  var timeoutCorrect = (timeout/1000);
+	        	  logAction('No Activity for ' + timeoutCorrect + ' seconds');
+	        	  reset();
+	          });
+
+	          $(document).bind("active.idleTimer", function(){
+	             //user active again
+	          });
+
+	          $.idleTimer(timeout);
+
+	         
+			
 			$('img').bind('dragstart', function(event) {
 				event.preventDefault();
 			});

@@ -10,6 +10,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	cursor: none;
+	overflow: hidden;
 }
 
 #finishedShopping {
@@ -30,9 +31,17 @@ body {
 	display: none;
 }
 
+#handPhone {
+	background: url('assets/handphone.png') no-repeat 0 0;
+	width: 768px;
+	height: 1283px;
+	position: absolute;
+	bottom: -1283px;
+	left: 180px;
+}
+
 #previousButton {
-	background: url('assets/left-arrow.png') no-repeat 0 0 ;
-	
+	background: url('assets/left-arrow.png') no-repeat 0 0;
 	width: 75px;
 	height: 100px;
 	position: absolute;
@@ -41,7 +50,7 @@ body {
 }
 
 #nextButton {
-	background: url('assets/right-arrow.png') no-repeat 0 0 ;
+	background: url('assets/right-arrow.png') no-repeat 0 0;
 	width: 75px;
 	height: 100px;
 	position: absolute;

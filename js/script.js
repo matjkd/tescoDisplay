@@ -67,8 +67,8 @@ function showHand() {
 	 $('#handPhone').animate({
 		    opacity: 1,
 		    bottom: '0',
-		    left:'840'
-		  }, 2000, function() {
+		    left:'80'
+		  }, 3000, function() {
 		    // Animation complete.
 			  
 		  });
@@ -77,10 +77,10 @@ function showHand() {
 function hideHand() {
 	$('#handPhone').animate({
 	    opacity: 0,
-	    bottom: '-200',
-	    left:'880'
+	    bottom: '-1283',
+	    left:'120'
 	  
-	  }, 2000, function() {
+	  }, 3000, function() {
 	    // Animation complete.
 		  
 	  });
@@ -110,7 +110,7 @@ $(document).ready(function(){
 
 	
 		 showHand();
-		 setTimeout('hideHand()',5000);
+		 setTimeout('hideHand()',15000);
 
 		
 		    

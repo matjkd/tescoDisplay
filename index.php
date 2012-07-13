@@ -76,8 +76,8 @@
 	</div>
 
 
-	<div id="handPhone"
-		style=" width: 200px; height: 200px; position: absolute; bottom: -200px; left: 880px;">
+	<div id="handPhone">
+	&nbsp;
 
 	</div>
 

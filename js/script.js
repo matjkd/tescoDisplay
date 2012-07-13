@@ -7,6 +7,7 @@ var totalSlides = 5;
 var valuenow = 0;
 var currentpage = 0;
 var hand = 0;
+var phonesmall = 0;
 
 var slideshow = new Dragdealer('slideshow', {
 	steps : totalSlides,
@@ -75,10 +76,9 @@ var slideshow = new Dragdealer('slideshow', {
 		}
 
 		if (doalert == 5) {
-			// showHand();
+			
 			setTimeout('finalPage()', 2000);
-			// setTimeout('hideHand()',5000);
-
+			
 			logAction('Page 5 Visited');
 		}
 
@@ -105,29 +105,35 @@ function finalPage() {
 }
 
 function showHand() {
+	$('.phoneSlideshowSmall').fadeOut();
 	$('#handPhone').animate({
 		opacity : 1,
 		bottom : '0',
-		left : '80'
+		left : '80',
+		
+		width: '768px'
 	}, 3000, function() {
 		// Animation complete.
-
+		$('.phoneSlideshow').fadeIn();
+		phonesmall = 0;
 	});
 	
-	$('.phoneSlideshow').fadeIn();
+	
 }
 
 function hideHand() {
 	$('.phoneSlideshow').fadeOut();
 	$('#handPhone').animate({
 		opacity : 1,
-		bottom : '-883',
-		left : '420',
+		bottom : '-950',
+		left : '590px',
 		width: '492px'
 
 	}, 3000, function() {
 		// Animation complete.
 		$('.phoneSlideshowSmall').fadeIn();
+		phonesmall = 1;
+	
 	});
 	
 	
@@ -138,11 +144,11 @@ function hideHandtotal() {
 	$('#handPhone').animate({
 		opacity : 1,
 		bottom : '-1283',
-		left : '220'
+		left : '590px'
 
 	}, 3000, function() {
 		// Animation complete.
-		 hand = 0;
+		
 	});
 	
 	
@@ -173,9 +179,14 @@ $(document).ready(
 			// });
 			
 			document.getElementById('handPhone').onclick = function() {
-				hideHand();
+				
+				if(phonesmall ==1){
+					hideHandtotal();
+				} else {
+					hideHand();
+				}
 			}
-		
+			
 
 			document.getElementById('nextButton').onclick = function() {
 

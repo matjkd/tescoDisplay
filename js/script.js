@@ -121,6 +121,19 @@ function hideHand() {
 
 	});
 }
+function hideHandtotal() {
+	$('#handPhone').animate({
+		opacity : 1,
+		bottom : '-1283',
+		left : '220'
+
+	}, 3000, function() {
+		// Animation complete.
+		 hand = 0;
+	});
+	
+	
+}
 
 function showAlert() {
 	$('#finishedShopping').fadeIn('slow', function() {

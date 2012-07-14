@@ -103,7 +103,7 @@
 		
 		<div class="yesnocontainer">
 			<div onclick="reset()" class="selectDisable yesButton yesno">&nbsp;</div>
-			<div onclick="hideAlert()" class="selectDisable noButton yesno">&nbsp;</div>
+			<div onclick="notFinished()" class="selectDisable noButton yesno">&nbsp;</div>
 		</div>
 	</div>
 

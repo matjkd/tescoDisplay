@@ -94,6 +94,10 @@ function logAction(action) {
 		action : action
 	});
 }
+function notFinished() {
+	logAction('Clicked No on Finished Shopping popup');
+	hideAlert();
+}
 
 function finalPage() {
 

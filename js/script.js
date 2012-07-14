@@ -9,6 +9,9 @@ var currentpage = 0;
 var hand = 0;
 var phonesmall = 0;
 var timeout = 45000;
+var d = new Date();
+var hour = d.getHours();
+var handclicked = 0;
 
 var slideshow = new Dragdealer('slideshow', {
 	steps : totalSlides,
@@ -115,7 +118,11 @@ function showHand() {
 		width: '768px'
 	}, 3000, function() {
 		// Animation complete.
+		if(handclicked == 0){
 		$('.phoneSlideshow').fadeIn();
+		} else {
+			//do nothing
+		}
 		phonesmall = 0;
 	});
 	
@@ -123,19 +130,23 @@ function showHand() {
 }
 
 function hideHand() {
-	$('.phoneSlideshow').fadeOut();
-	$('#handPhone').animate({
-		opacity : 1,
-		bottom : '-950',
-		left : '590px',
-		width: '492px'
+	$('.phoneSlideshow').fadeOut('fast', function() {
+	    // Animation complete.
+		$('#handPhone').animate({
+			opacity : 0.5,
+			bottom : '-950',
+			left : '590px',
+			width: '492px'
 
-	}, 3000, function() {
-		// Animation complete.
-		$('.phoneSlideshowSmall').fadeIn();
-		phonesmall = 1;
+		}, 3000, function() {
+			// Animation complete.
+			$('.phoneSlideshowSmall').fadeIn();
+			phonesmall = 1;
+		
+		});
+	  });
 	
-	});
+	
 	
 	
 	
@@ -168,17 +179,18 @@ function hideAlert() {
 }
 
 function reset() {
-	var d = new Date();
-	var hour = d.getHours();
+	d = new Date();
+	hour = parseInt(d.getHours());
 	
-	
-	if(hour <= 6 || hour >= 21) {
+	if(hour > 21 || hour < 6) {
+		
 		window.location  = 'slideshow.php';
-	}
+	} else {
 	
 	
 	hideHandtotal();
 	location.reload();
+	}
 }
 
 // Links
@@ -209,14 +221,16 @@ $(document).ready(
 			// return false;
 			// });
 			
-			document.getElementById('handPhone').onclick = function() {
+			$('#handPhone').click(function() {
+				
+				handclicked = 1;
 				
 				if(phonesmall ==1){
 					hideHandtotal();
 				} else {
 					hideHand();
 				}
-			}
+			});
 			
 
 			document.getElementById('nextButton').onclick = function() {

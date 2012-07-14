@@ -24,7 +24,7 @@
 <body>
 
 
-<img src="css/assets/off.jpg"/>
+<div class="selectDisable" style="background:url('css/assets/off.jpg'); width:1080px; height:1920px;"></div>
 	<!-- JavaScript at the bottom for fast page loading -->
 
 	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->

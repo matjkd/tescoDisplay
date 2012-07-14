@@ -133,7 +133,7 @@ function hideHand() {
 	$('.phoneSlideshow').fadeOut('fast', function() {
 	    // Animation complete.
 		$('#handPhone').animate({
-			opacity : 0.5,
+			opacity : 1,
 			bottom : '-950',
 			left : '590px',
 			width: '492px'

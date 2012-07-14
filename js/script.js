@@ -172,7 +172,7 @@ function reset() {
 	var hour = d.getHours();
 	
 	
-	if(hour < 6 || hour > 21) {
+	if(hour <= 6 || hour >= 21) {
 		window.location  = 'slideshow.php';
 	}
 	

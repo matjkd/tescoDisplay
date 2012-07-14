@@ -1,3 +1,6 @@
 log/*.csv
 */log/*.csv
+.settings/
+.project
+.buildpath
 .htaccess

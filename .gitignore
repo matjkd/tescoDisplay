@@ -1,5 +1,7 @@
 log/*.csv
 */log/*.csv
+css/assets/*
+css/fridge/*
 .settings/
 .project
 .buildpath

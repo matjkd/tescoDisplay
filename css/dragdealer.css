@@ -10,7 +10,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	cursor: none;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 #bgImage {

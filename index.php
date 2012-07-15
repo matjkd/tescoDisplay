@@ -109,6 +109,9 @@
         
         <div id="tescoLogo" onclick="reset()">
         </div>
+        
+         <div id="legal" >
+        </div>
         <div id="finishedShopping">
             <img  src="css/assets/finished-shopping.png"/>
 

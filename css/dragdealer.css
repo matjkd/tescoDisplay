@@ -122,6 +122,16 @@ body {
     top:1750px;
     
 }
+#legal {
+    position:absolute;
+    background-image: url('assets/legal.png');
+    height: 16px;
+    width:543px;
+    left:268px;
+    bottom:30px;
+    
+}
+
 .yesButton {
 	float: left;
 	background-image: url('assets/Yes.png');

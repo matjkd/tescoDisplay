@@ -59,15 +59,16 @@ var slideshow = new Dragdealer('slideshow', {
                 showHand();
 
                 $('.phoneSlideshow').cycle({
-                    fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-							
+                    fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+			delay: 2500				
                 });
 				 
                 $('.phoneSlideshowSmall').cycle({
-                    fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+                    fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+delay:3000
 							
                 });
-                setTimeout('hideHand()', 17000);
+                setTimeout('hideHand()', 20000);
                 hand = 1;
             }
 
@@ -143,9 +144,9 @@ function hideHand() {
         // Animation complete.
         $('#handPhone').animate({
             opacity : 1,
-            bottom : '-950',
-            left : '590px',
-            width: '492px'
+            bottom : '-1000',
+            left : '690px',
+            width: '350px'
 
         }, 3000, function() {
             // Animation complete.

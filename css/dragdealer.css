@@ -10,7 +10,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	cursor: none;
-	overflow: hidden;
+	
 }
 
 #bgImage {
@@ -88,8 +88,8 @@ body {
 .phoneSlideshowSmall  {
 	z-index:2000;
 	position:relative;
-	left:278px;
-	top:50px;
+	left:195px;
+	top:24px;
 	width:238px;
 	
 }
@@ -99,8 +99,9 @@ body {
 	
 }
 .slideImagesSmall {
-	width: 149px;
-	height:256px;
+   
+	width: 110px;
+	height:189px;
 	
 }
 .yesno {

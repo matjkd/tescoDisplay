@@ -10,7 +10,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	cursor: none;
-        overflow:auto;
+        overflow:hidden;
 	
 }
 
@@ -73,7 +73,7 @@ body {
 }
 #start {
     position:absolute;
-    top:1452px;
+    top:346px;
     left:239px;
     
 }
@@ -121,7 +121,7 @@ body {
     height: 97px;
     width:520px;
     left:280px;
-    top:1750px;
+    top:1720px;
     
 }
 #legal {

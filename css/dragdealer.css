@@ -10,6 +10,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	cursor: none;
+        overflow:auto;
 	
 }
 
@@ -99,7 +100,7 @@ body {
 	
 }
 .slideImagesSmall {
-   
+    
 	width: 110px;
 	height:189px;
 	

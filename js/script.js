@@ -215,6 +215,20 @@ function reset() {
         location.reload();
     }
 }
+function checktime() {
+  d = new Date();
+    hour = parseInt(d.getHours());
+	
+    if(hour > 21 || hour < 6) {
+		
+        window.location  = 'slideshow.php';
+    } else {
+	
+	
+      //  hideHandtotal();
+      //  location.reload();
+    }
+}
 
 // Links
 
@@ -234,7 +248,7 @@ timeout:5000
         $(document).bind("idle.idleTimer", function(){
             var timeoutCorrect = (timeout/1000);
             logAction('No Activity for ' + timeoutCorrect + ' seconds');
-            reset();
+            checktime();
         });
 
         $(document).bind("active.idleTimer", function(){

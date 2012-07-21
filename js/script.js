@@ -76,17 +76,20 @@ delay:3000
         }
 
         if (doalert == 3) {
-             $('.startSlideshow').fadeOut();	
+             $('.startSlideshow').fadeOut();
+
             logAction('Page 3  Visited');
         }
 
         if (doalert == 4) {
-             $('.startSlideshow').fadeOut();	
+             $('.startSlideshow').fadeOut();
+	
             logAction('Page 4  Visited');
         }
 
         if (doalert == 5) {
-		 $('.startSlideshow').fadeOut();		
+		 $('.startSlideshow').fadeOut();
+			
             setTimeout('finalPage()', 2000);
 			
             logAction('Page 5 Visited');
@@ -144,7 +147,7 @@ function hideHand() {
         // Animation complete.
         $('#handPhone').animate({
             opacity : 1,
-            bottom : '-1000',
+            bottom : '-1050',
             left : '690px',
             width: '350px'
 

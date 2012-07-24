@@ -47,14 +47,18 @@ var slideshow = new Dragdealer('slideshow', {
         }
 
         if (doalert == 1) {
-            $('.startSlideshow').fadeIn();	
+ $('#nextButton').fadeIn();	
+$('#previousButton').fadeOut();
+            $('.startSlideshow').fadeIn();
+
             logAction('Page 1 touched');
         }
 
         if (doalert == 2) {
-            
+             $('#previousButton').fadeIn('5');
+ $('#nextButton').fadeIn();	
             $('.startSlideshow').fadeOut('10');	
-
+           
             if (hand == 0) {
                 showHand();
 
@@ -77,18 +81,24 @@ delay:3000
 
         if (doalert == 3) {
              $('.startSlideshow').fadeOut();
+ $('#previousButton').fadeIn();	
+ $('#nextButton').fadeIn();
 
             logAction('Page 3  Visited');
         }
 
         if (doalert == 4) {
              $('.startSlideshow').fadeOut();
+ $('#previousButton').fadeIn();	
+ $('#nextButton').fadeIn();	
 	
             logAction('Page 4  Visited');
         }
 
         if (doalert == 5) {
 		 $('.startSlideshow').fadeOut();
+ $('#previousButton').fadeIn();	
+ $('#nextButton').fadeOut();	
 			
             setTimeout('finalPage()', 2000);
 			
@@ -211,7 +221,7 @@ function reset() {
 	
     if(hour > 21 || hour < 6) {
 		
-        window.location  = 'slideshow.php';
+      //  window.location  = 'slideshow.php';
     } else {
 	
 	
@@ -225,7 +235,7 @@ function checktime() {
 	
     if(hour > 21 || hour < 6) {
 		
-        window.location  = 'slideshow.php';
+      //  window.location  = 'slideshow.php';
     } else {
 	
 	
@@ -275,7 +285,7 @@ timeout:5000
             handclicked = 1;
 				
             if(phonesmall ==1){
-                hideHandtotal();
+                //hideHandtotal();
             } else {
                 hideHand();
             }

@@ -66,7 +66,7 @@
                 </div> -->	
 
         <div class="selectDisable" id="previousButton"
-             style="">
+             style="display:none;">
             &nbsp;
         </div>
 

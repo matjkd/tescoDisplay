@@ -148,7 +148,7 @@ body {
 #legal {
     position:absolute;
     background-image: url('assets/legal.png');
-    height: 32px;
+    height: 16px;
     width:543px;
     left:268px;
     bottom:30px;

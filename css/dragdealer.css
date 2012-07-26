@@ -10,7 +10,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	cursor: none;
-        overflow:hidden;
+        overflow:none;
 	
 }
 
@@ -24,6 +24,25 @@ body {
 
 #finishedShopping {
 	border: solid 0px #000000;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	-moz-box-shadow: 4px 4px 39px #000000;
+	-webkit-box-shadow: 4px 4px 39px #000000;
+	box-shadow: 4px 4px 39px #000000;
+	background: #fff;
+	width: 508px;
+	height: 265px;
+	position: absolute;
+	top: 450px;
+	left: 285px;
+	text-align: center;
+	display: none;
+	padding-top:30px;
+}
+
+#niceflight {
+    border: solid 0px #000000;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
@@ -69,12 +88,14 @@ body {
 	top: 540px;
 	left: 995px;
 	cursor: none;
+        z-index:20000;
 	
 }
 #start {
     position:absolute;
     top:346px;
     left:239px;
+    
     
 }
 
@@ -162,7 +183,7 @@ body {
 
 .dragdealer .handle {
 	position: absolute;
-	cursor: pointer;
+	cursor: none;
 }
 
 .dragdealer .red-bar {

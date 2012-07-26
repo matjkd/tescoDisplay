@@ -97,11 +97,11 @@
 
         </div>
 
-        <div id="start" class="selectDisable">
+        <div id="start">
  <div class="startSlideshow selectDisable">
 
-                <img class="slidestart selectDisable" id="start1" src="css/assets/start-1.png"/>
-                <img class="slidestart selectDisable" id="start2" src="css/assets/start-2.png"/>
+                <img class="slidestart" id="start1" src="css/assets/start-1.png"/>
+                <img class="slidestart" id="start2" src="css/assets/start-2.png"/>
                 
             </div>
         </div>

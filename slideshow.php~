@@ -41,7 +41,7 @@
 
 function reset() {
 if(hour > 5 && hour < 21) {
-	//window.location  = 'index.php';
+	window.location  = 'index.php';
 }
 }
 	

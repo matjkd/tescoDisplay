@@ -28,35 +28,35 @@ var slideshow = new Dragdealer('slideshow', {
 
         if (totalval == 0) {
 
-             doalert = 1;
+            doalert = 1;
 
         } else if (totalval == 1) {
-             doalert = 2;
+            doalert = 2;
 
         } else if (totalval == 2) {
-             doalert = 3;
+            doalert = 3;
         } else if (totalval == 3) {
-             doalert = 4;
+            doalert = 4;
         } else if (totalval == 4) {
-             doalert = 5;
+            doalert = 5;
         }
 
         else {
 
-            // doalert = 0;
+        // doalert = 0;
         }
 
         if (doalert == 1) {
- $('#nextButton').show();	
-$('#previousButton').hide();
+            $('#nextButton').show();	
+            $('#previousButton').hide();
            
 
             logAction('Page 1 touched');
         }
 
         if (doalert == 2) {
-             $('#previousButton').hide();
- $('#nextButton').show();	
+            $('#previousButton').hide();
+            $('#nextButton').show();	
           
            
             if (hand == 0) {
@@ -64,12 +64,12 @@ $('#previousButton').hide();
 
                 $('.phoneSlideshow').cycle({
                     fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-			delay: 1500				
+                    delay: 1500				
                 });
 				 
                 $('.phoneSlideshowSmall').cycle({
                     fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-delay:3000
+                    delay:3000
 							
                 });
                 setTimeout('hideHand()', 20500);
@@ -81,26 +81,26 @@ delay:3000
 
         if (doalert == 3) {
             
- $('#previousButton').show();	
- $('#nextButton').show();
+            $('#previousButton').show();	
+            $('#nextButton').show();
 
             logAction('Page 3  Visited');
         }
 
         if (doalert == 4) {
-             $('.startSlideshow').fadeOut();
- $('#previousButton').show();	
- $('#nextButton').show();	
+            $('.startSlideshow').fadeOut();
+            $('#previousButton').show();	
+            $('#nextButton').show();	
 	
             logAction('Page 4  Visited');
         }
 
         if (doalert == 5) {
-		 $('.startSlideshow').fadeOut();
- $('#previousButton').show();	
- $('#nextButton').hide();	
+            $('.startSlideshow').fadeOut();
+            $('#previousButton').show();	
+            $('#nextButton').hide();	
 			
-           // setTimeout('finalPage()', 2000);
+            // setTimeout('finalPage()', 2000);
 			
             logAction('Page 5 Visited');
         }
@@ -191,19 +191,30 @@ function hideHandtotal() {
 $(function(){
     // Self-executing recursive animation
     (function pulse(){
-        $('#nextButton').delay(200).animate({opacity: 0.3}, 2000 ).delay(50).animate({opacity:1}, 2000);
-        $('#previousButton').delay(200).animate({opacity: 0.3}, 2000 ).delay(50).animate({opacity:1}, 2000);
+        $('#nextButton').delay(200).animate({
+            opacity: 0.3
+        }, 2000 ).delay(50).animate({
+            opacity:1
+        }, 2000);
+        $('#previousButton').delay(200).animate({
+            opacity: 0.3
+        }, 2000 ).delay(50).animate({
+            opacity:1
+        }, 2000);
         $('#start').delay(200).animate({
-opacity: 0.3}, 2000 ).delay(50).animate({opacity:1}, 2000,pulse);
+            opacity: 0.3
+        }, 2000 ).delay(50).animate({
+            opacity:1
+        }, 2000,pulse);
 
 
-//$('#start1').delay(200).animate({
-//width: "100%"}, 1000 ).animate({width:"105%"}, 1000,pulse);
-//$('#start2').delay(200).animate({
-//width: "100%"}, 1000 ).animate({width:"105%"}, 1000,pulse);
+    //$('#start1').delay(200).animate({
+    //width: "100%"}, 1000 ).animate({width:"105%"}, 1000,pulse);
+    //$('#start2').delay(200).animate({
+    //width: "100%"}, 1000 ).animate({width:"105%"}, 1000,pulse);
     
 
-})();
+    })();
 });
 
 function showAlert() {
@@ -219,52 +230,45 @@ function hideAlert() {
 }
 
 function finished() {
-hideAlert();
-     $('#niceflight').fadeIn('slow', function() {
+    hideAlert();
+    $('#niceflight').fadeIn('slow', function() {
         // Animation complete
-           setTimeout('reset()', 6000);
-        });
+        setTimeout('reset()', 6000);
+    });
 }
 function reset() {
     d = new Date();
     hour = parseInt(d.getHours());
 	
-    if(hour > 21 || hour < 6) {
-		
-      //  window.location  = 'slideshow.php';
-    } else {
+ 
 	
 	
-        hideHandtotal();
-        location.reload();
-    }
+    hideHandtotal();
+    location.reload();
+    
 }
 function resetArrows() {
 
-$('#nextButton').css({background:"url(http://localhost/tesco/css/assets/right-arrow.png)"});
+    $('#nextButton').css({
+        background:"url(http://localhost/tesco/css/assets/right-arrow.png)"
+    });
 
-$('#previousButton').css({background:"url(http://localhost/tesco/css/assets/left-arrow.png)"});
+    $('#previousButton').css({
+        background:"url(http://localhost/tesco/css/assets/left-arrow.png)"
+    });
 }
 function checktime() {
  
 
-if(doalert >= 2){
+    if(doalert >= 2){
 
-showAlert();
+        showAlert();
 
-}
-  d = new Date();
+    }
+    d = new Date();
     hour = parseInt(d.getHours());
 	
-    if(hour > 21 || hour < 6) {
-		
-      //  window.location  = 'slideshow.php';
-    } else {
-	
-	
-      //  hideHandtotal();
-      //  location.reload();
-    }
+    
 }
 
 // Links
@@ -275,8 +279,8 @@ $(document).ready(
         
         $('.startSlideshow').cycle({
             fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-speed: 1000,
-timeout:5000
+            speed: 1000,
+            timeout:5000
         });
 	 	
          
@@ -309,27 +313,29 @@ timeout:5000
             handclicked = 1;
 				
             if(phonesmall ==1){
-                //hideHandtotal();
+            //hideHandtotal();
             } else {
                 hideHand();
             }
         });
 			
-$('#slideshow').click(function() {
-	$('.startSlideshow').hide();
- valuenow = parseFloat(slideshow
+        $('#slideshow').click(function() {
+            $('.startSlideshow').hide();
+            valuenow = parseFloat(slideshow
                 .getClosestSteps(slideshow.value.current));
             currentpage = (valuenow * (totalSlides - 1) + 1);
-if(currentpage == 1) {
- slideshow.setStep(2);
-}
+            if(currentpage == 1) {
+                slideshow.setStep(2);
+            }
 		
-});
+        });
         document.getElementById('nextButton').onclick = function() {
-  $('.startSlideshow').hide();
-$(this).css({background:"url(http://localhost/tesco/css/assets/right-arrow-blue.png)"});
+            $('.startSlideshow').hide();
+            $(this).css({
+                background:"url(http://localhost/tesco/css/assets/right-arrow-blue.png)"
+            });
 
-setTimeout('resetArrows()', 1000);
+            setTimeout('resetArrows()', 1000);
             valuenow = parseFloat(slideshow
                 .getClosestSteps(slideshow.value.current));
             currentpage = (valuenow * (totalSlides - 1) + 1);
@@ -340,9 +346,11 @@ setTimeout('resetArrows()', 1000);
         }
 
         document.getElementById('previousButton').onclick = function() {
-$(this).css({background:"url(http://localhost/tesco/css/assets/left-arrow-blue.png)"});
+            $(this).css({
+                background:"url(http://localhost/tesco/css/assets/left-arrow-blue.png)"
+            });
 
-setTimeout('resetArrows()', 1000);
+            setTimeout('resetArrows()', 1000);
 
             valuenow = parseFloat(slideshow
                 .getClosestSteps(slideshow.value.current));

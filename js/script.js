@@ -21,6 +21,8 @@ var slideshow = new Dragdealer('slideshow', {
     loose : true,
     callback : function() {
 
+
+     
     },
     animationCallback : function(x, y) {
 
@@ -51,7 +53,7 @@ var slideshow = new Dragdealer('slideshow', {
             $('#previousButton').hide();
            
 
-            logAction('Page 1 touched');
+          
         }
 
         if (doalert == 2) {
@@ -76,7 +78,7 @@ var slideshow = new Dragdealer('slideshow', {
                 hand = 1;
             }
 
-            logAction('Page 2 Visited');
+         
         }
 
         if (doalert == 3) {
@@ -84,7 +86,7 @@ var slideshow = new Dragdealer('slideshow', {
             $('#previousButton').show();	
             $('#nextButton').show();
 
-            logAction('Page 3  Visited');
+          
         }
 
         if (doalert == 4) {
@@ -92,7 +94,7 @@ var slideshow = new Dragdealer('slideshow', {
             $('#previousButton').show();	
             $('#nextButton').show();	
 	
-            logAction('Page 4  Visited');
+           
         }
 
         if (doalert == 5) {
@@ -100,9 +102,9 @@ var slideshow = new Dragdealer('slideshow', {
             $('#previousButton').show();	
             $('#nextButton').hide();	
 			
-            // setTimeout('finalPage()', 2000);
+        // setTimeout('finalPage()', 2000);
 			
-            logAction('Page 5 Visited');
+           
         }
 
     }
@@ -311,13 +313,16 @@ $(document).ready(
         $('#handPhone').click(function() {
 				
             handclicked = 1;
-				
+	 logAction('Hand Pressed');			
             if(phonesmall ==1){
             //hideHandtotal();
             } else {
                 hideHand();
             }
         });
+        
+        
+    
 			
         $('#slideshow').click(function() {
             $('.startSlideshow').hide();
@@ -327,6 +332,30 @@ $(document).ready(
             if(currentpage == 1) {
                 slideshow.setStep(2);
             }
+            
+                if (currentpage == 1) {
+
+            logAction('Page 1 touched');
+
+        } 
+        
+        if (currentpage == 2) {
+            logAction('Page 2 Visited');
+
+        } 
+        if (currentpage == 3) {
+            logAction('Page 3 Visited');
+        } 
+        
+        if (currentpage == 4) {
+            logAction('Page 4 Visited');
+        } 
+        
+        if (currentpage == 5) {
+            logAction('Page 5 Visited');
+        }
+            
+            
 		
         });
         document.getElementById('nextButton').onclick = function() {
